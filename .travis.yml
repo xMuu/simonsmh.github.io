@@ -1,0 +1,27 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+
+before_script:
+  - npm install -g hexo
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "Simon Shi"
+  - git config user.email "simonsmh@gmail.com"
+  - git add .
+  - git commit -m "Hexo Pages"
+  - git push --force --quiet "https://${GitHub_Token}@github.com/simonsmh/simonsmh.github.io.git" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - source
