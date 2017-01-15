@@ -12,8 +12,8 @@ head:
 # Jump Links Settings
 url:
     rss: "/atom.xml"
-    daily_pic: "/"
-    logo: "/"
+    daily_pic: 
+    logo: 
 
 
 # ---------------------------------------------------------------
@@ -27,12 +27,12 @@ scheme: Paradox
 # UI & UX: slogan, color, effect
 uiux:
     slogan: "simonsmh后花园"
-    theme_color: "#0097A7"
-    theme_sub_color: "#00838F"
-    hyperlink_color: "#00838F"
-    button_color: "#757575"
-    android_chrome_color: "#0097A7"
-    nprogress_color: "#FF4081"
+    theme_color: "#3949ab"
+    theme_sub_color: "#283593"
+    hyperlink_color: "#283593"
+    button_color: "#3949ab"
+    android_chrome_color: "#3949ab"
+    nprogress_color: "#536dfe"
     nprogress_buffer: "800"
 
 # JS Effect Switches
@@ -59,10 +59,10 @@ thumbnail:
 #         color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow
 #         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
 background:
-    #purecolor: "#F5F5F5"
+    purecolor: "#424242"
     #bgimg: "/img/bg.png"
     bing:
-        enable: true
+        enable: false
         parameter:
 
 # Images Settings
@@ -110,7 +110,7 @@ sns_share:
 # Sidebar User Dropdown
 dropdown:
     Email Me:
-        link: "simonsmh@gmail.com"
+        link: "mailto:simonsmh@gmail.com"
         icon: email
 
 # Sidebar Categories Switch
