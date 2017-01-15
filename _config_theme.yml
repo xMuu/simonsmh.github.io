@@ -11,7 +11,7 @@ head:
 
 # Jump Links Settings
 url:
-    rss:
+    rss: rss2.xml
     daily_pic: "#"
     logo: "#"
 
