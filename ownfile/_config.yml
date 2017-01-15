@@ -11,9 +11,9 @@ head:
 
 # Jump Links Settings
 url:
-    rss: 
-    daily_pic: "#"
-    logo: "#"
+    rss: "/atom.xml"
+    daily_pic: "/"
+    logo: "/"
 
 
 # ---------------------------------------------------------------
@@ -59,17 +59,17 @@ thumbnail:
 #         color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow
 #         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
 background:
-    purecolor: "#F5F5F5"
+    #purecolor: "#F5F5F5"
     #bgimg: "/img/bg.png"
     bing:
-        enable: false
+        enable: true
         parameter:
 
 # Images Settings
 img:
     logo: "/img/logo.png"
     avatar: "/img/avatar.png"
-    daily_pic: "/img/daily_pic.png"
+    daily_pic: "https://manage.conoha.jp/Content/Images/ConoHa/ConoHaMode/bg_conoha.jpg"
     sidebar_header: "/img/sidebar_header.png"
     footerico: "/img/footer/footer_ico-"
     #upyun_logo: "/img/upyun_logo.png"
