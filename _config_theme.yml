@@ -11,7 +11,7 @@ head:
 
 # Jump Links Settings
 url:
-    rss: rss2.xml
+    rss: 
     daily_pic: "#"
     logo: "#"
 
@@ -85,17 +85,17 @@ fonts: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "
 # SNS Menu
 sns:
     email: simonsmh@gmail.com
-    facebook: "https://www.facebook.com/facebook"
-    twitter: "https://twitter.com/twitter"
-    googleplus: "https://www.google.com/"
-    weibo: 
+    facebook: "https://www.facebook.com/simonsmh"
+    twitter: "https://twitter.com/MinhaoShi"
+    googleplus: "https://plus.google.com/u/0/114021435604193997174/posts"
+    weibo: "http://weibo.com/u/2322746402"
     instagram: 
     tumblr: 
-    github: 
+    github: "https://github.com/simonsmh"
     linkedin: 
-    zhihu: 
-    bilibili: 
-    telegram: 
+    zhihu: "https://www.zhihu.com/people/shi-min-hao-52"
+    bilibili: "http://space.bilibili.com/1353201#!/index"
+    telegram: "http://t.me/Adiutor"
 
 # SNS Share Switch
 sns_share:
@@ -110,7 +110,7 @@ sns_share:
 # Sidebar User Dropdown
 dropdown:
     Email Me:
-        link: "#"
+        link: "simonsmh@gmail.com"
         icon: email
 
 # Sidebar Categories Switch

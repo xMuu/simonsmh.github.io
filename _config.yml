@@ -72,9 +72,9 @@ deploy:
 
 # RSS
 ## Docs: https://github.com/hexojs/hexo-generator-feed
-feed:
-  type: rss2
-  path: rss2.xml
-  limit: flase
-  hub:
-  content:
+#feed:
+#  type: rss2
+#  path: rss2.xml
+#  limit: 0
+#  hub:
+#  content:
