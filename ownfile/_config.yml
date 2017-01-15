@@ -12,10 +12,8 @@ head:
 # Jump Links Settings
 url:
     rss: "/atom.xml"
-    daily_pic: 
-    logo: 
-
-
+    daily_pic: "/"
+    logo: "/"
 # ---------------------------------------------------------------
 # Style Settings
 # ---------------------------------------------------------------
@@ -26,7 +24,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "simonsmh后花园"
+    slogan: "simonsmh - 后花园"
     theme_color: "#3949ab"
     theme_sub_color: "#283593"
     hyperlink_color: "#283593"
