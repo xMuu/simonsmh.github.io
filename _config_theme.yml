@@ -26,7 +26,7 @@ scheme: Paradox
 
 # UI & UX: slogan, color, effect
 uiux:
-    slogan: "Hi, nice to meet you"
+    slogan: "simonsmh后花园"
     theme_color: "#0097A7"
     theme_sub_color: "#00838F"
     hyperlink_color: "#00838F"
@@ -84,7 +84,7 @@ fonts: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "
 
 # SNS Menu
 sns:
-    email: youremail@email.com
+    email: simonsmh@gmail.com
     facebook: "https://www.facebook.com/facebook"
     twitter: "https://twitter.com/twitter"
     googleplus: "https://www.google.com/"
@@ -103,9 +103,9 @@ sns_share:
     facebook: true
     googleplus: true
     weibo: true
-    linkedin: false
-    qq: false
-    telegram: false
+    linkedin: true
+    qq: true
+    telegram: true
 
 # Sidebar User Dropdown
 dropdown:
@@ -114,7 +114,7 @@ dropdown:
         icon: email
 
 # Sidebar Categories Switch
-sidebar_categories: false
+sidebar_categories: true
 
 # Pages Menu
 pages:
@@ -123,7 +123,7 @@ pages:
         #icon: person
 
 # Qrcode for redirect at other device
-qrcode: false
+qrcode: true
 
 # ---------------------------------------------------------------
 # Integrated Services
