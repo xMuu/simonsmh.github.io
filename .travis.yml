@@ -5,8 +5,11 @@ node_js: stable
 install:
   - npm install
 
-# before_script:
-  # - npm install -g hexo
+before_script:
+  - git config user.name "Simon Shi"
+  - git config user.email "simonsmh@gmail.com"
+  - git submodule update --init --recursive
+  - cp -f _config_theme.yml themes/hexo-theme-material/_config.yml
 
 script:
   - hexo g
@@ -14,9 +17,6 @@ script:
 after_script:
   - cd ./public
   - git init
-  - git config user.name "Simon Shi"
-  - git config user.email "simonsmh@gmail.com"
-  - git submodule update --init --recursive
   - git add .
   - git commit -m "Hexo Pages"
   - git push --force --quiet "https://${GitHub_Token}@github.com/simonsmh/simonsmh.github.io.git" master:master
