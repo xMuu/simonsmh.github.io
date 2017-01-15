@@ -69,3 +69,8 @@ theme: hexo-theme-material
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# RSS
+## Docs: https://github.com/hexojs/hexo-generator-feed
+ feed:
+  type: atom
