@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: simonsmh后花园
+title: simonsmh - 后花园
 subtitle:
 description:
 author: Simon Shi
@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://simonsmh.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year/:month/:title/
 permalink_defaults:
 
 # Directory
@@ -40,11 +40,10 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
-  tab_replace:
-
+  auto_detect: true
+  tab_replace: true
 # Category & Tag
-default_category: uncategorized
+default_category: chat
 category_map:
 tag_map:
 
