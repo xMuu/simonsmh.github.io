@@ -4,8 +4,8 @@
 
 # Site
 title: simonsmh - 后花园
-subtitle:
-description:
+subtitle: simonsmh - 后花园
+description: 快来与我一起发现更加广阔的互联网世界吧
 author: Simon Shi
 language: zh-CN
 timezone: Asia/Shanghai
@@ -43,9 +43,17 @@ highlight:
   auto_detect: true
   tab_replace: true
 # Category & Tag
-default_category: chat
+default_category: 未分类
 category_map:
+  未分类: uncategorized
+  杂谈: chat
+  技术: tech
+  路由器: openwrt
 tag_map:
+  未分类: uncategorized
+  杂谈: chat
+  技术: tech
+  路由器: openwrt
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -75,3 +83,9 @@ feed:
   type: atom
   path: atom.xml
   limit: 0
+
+# Search
+## Docs: https://github.com/PaicHyperionDev/hexo-generator-search
+search:
+  path: search.xml
+  field: post

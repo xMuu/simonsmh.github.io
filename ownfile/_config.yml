@@ -7,7 +7,7 @@ head:
     favicon: "/img/favicon.png"
     high_res_favicon: "/img/favicon.png"
     apple_touch_icon: "/img/favicon.png"
-    keywords:
+    keywords: hexo,tech,simonsmh,android,openwrt,website,linux
 
 # Jump Links Settings
 url:
@@ -57,7 +57,7 @@ thumbnail:
 #         color available value: black, blue, brown, green, multi, orange, pink, purple, red, white, yellow
 #         type available value: A (animal), C (culture), N (nature), S (space), T (travel)
 background:
-    purecolor: "#F5F5F5"
+    purecolor: "#EEEEEE"
     #bgimg: "/img/bg.png"
     bing:
         enable: false
@@ -107,7 +107,7 @@ sns_share:
 
 # Sidebar User Dropdown
 dropdown:
-    Email Me:
+    联系电邮:
         link: "mailto:simonsmh@gmail.com"
         icon: email
 
@@ -116,10 +116,12 @@ sidebar_categories: true
 
 # Pages Menu
 pages:
-    #About:
-        #link: "/about"
-        #icon: person
-
+    友情链接:
+        link: "/links/"
+        icon: people
+    贴吧云签到:
+        link: "https://tieba.simonsmh.cc/"
+        icon: assignment_turned_in
 # Qrcode for redirect at other device
 qrcode: true
 
@@ -131,8 +133,8 @@ qrcode: true
 # Available value of "use":
 #     duoshuo | disqus
 comment:
-    use:
-    shortname:
+    use: disqus
+    shortname: simonsmh
     duoshuo_thread_key_type: path
     duoshuo_embed_js_url: "https://static.duoshuo.com/embed.js"
 
@@ -140,7 +142,7 @@ comment:
 # Available value:
 #     swiftype | google | local
 search:
-    use: google
+    use: local
     swiftype_key:
 
 # Leancloud Views
