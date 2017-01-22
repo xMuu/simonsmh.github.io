@@ -1,8 +1,8 @@
----  
-title: Debian lnmp 安装记录  
-date: 2016-02-05 19:40:00  
-tags: [Linux]  
----  
+---
+title: Debian lnmp 安装记录
+date: 2016-02-05 19:40:00
+tags: [Linux]
+---
 
 ### 准备安装环境  
 这是所有依赖软件包集合，需要选择性安装  
