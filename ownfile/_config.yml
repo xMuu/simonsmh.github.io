@@ -14,6 +14,8 @@ url:
     rss: "/atom.xml"
     daily_pic: "/"
     logo: "/"
+
+
 # ---------------------------------------------------------------
 # Style Settings
 # ---------------------------------------------------------------
@@ -30,8 +32,7 @@ uiux:
     hyperlink_color: "#283593"
     button_color: "#3949ab"
     android_chrome_color: "#3949ab"
-    nprogress_color: "#536dfe"
-    nprogress_buffer: "800"
+    buffer: "800"
 
 # JS Effect Switches
 js_effect:
@@ -39,12 +40,8 @@ js_effect:
     smoothscroll: false
 
 # Reading experience
-# markdown available value:
-#     Material | Github | Plain
 reading:
-    markdown: Github
     entry_excerpt: 80
-    code_highlight: solarized-white
 
 # Thumbnail Settings
 thumbnail:
@@ -70,11 +67,28 @@ img:
     daily_pic: "https://manage.conoha.jp/Content/Images/ConoHa/ConoHaMode/bg_conoha.jpg"
     sidebar_header: "/img/sidebar_header.png"
     footerico: "/img/footer/footer_ico-"
-    #upyun_logo: "/img/upyun_logo.png"
     random_thumbnail: "/img/random/material-"
+    footer_image:
+        #upyun_logo:
+            #link: "https://www.upyun.com/"
+            #src: "/img/upyun_logo.png"
 
 # Custom Fonts
 fonts: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
+
+# Pace Settings
+# Pace is automatic page load progress bar
+# You can find demos on http://github.hubspot.com/pace/docs/welcome
+# Warning: Line color mustn't delete or not define!
+#     style available values:
+#       barber-shop, big-counter, bounce, center-atom, center-circle, center-radar, center-simple,
+#       corner-indicator, fill-left, fill-left-nocolor, flat-top, loading-bar, macosx
+# Or you can use your own style,just set the style value to "custom",
+# and put your own css style to source/css/pace/custom.css
+# document can be find on:
+pace:
+     style:
+     color: "#29d"
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -105,24 +119,51 @@ sns_share:
     qq: true
     telegram: true
 
-# Sidebar User Dropdown
-dropdown:
-    联系电邮:
-        link: "mailto:simonsmh@gmail.com"
-        icon: email
+# Sidebar Customize
+sidebar:
+    dropdown:
+        联系电邮:
+            link: "mailto:simonsmh@gmail.com"
+            icon: email
+    homepage:
+        use: true
+        icon: home
+        divider: false
+    archives:
+        use: true
+        icon: inbox
+        divider: false
+    categories:
+        use: false
+        icon: chrome_reader_mode
+        divider: false
+    pages:
+        友情链接:
+            link: "/links/"
+            icon: people
+            divider: false
+        贴吧云签到:
+            link: "https://tieba.simonsmh.cc/"
+            icon: assignment_turned_in
+            divider: false
+    article_num:
+        use: false
+        divider: false
+    footer:
+        divider: true
+        theme: true
+        support: false
+        feedback: false
+        material: false
 
-# Sidebar Categories Switch
-sidebar_categories: false
-# Pages Menu
-pages:
-    友情链接:
-        link: "/links/"
-        icon: people
-    贴吧云签到:
-        link: "https://tieba.simonsmh.cc/"
-        icon: assignment_turned_in
+# Card Elevation Level
+card_elevation: 2
+
 # Qrcode for redirect at other device
 qrcode: true
+
+# Support Pin posts on the top of the list
+topPost: true
 
 # ---------------------------------------------------------------
 # Integrated Services
@@ -144,11 +185,16 @@ search:
     use: local
     swiftype_key:
 
+# Analytics Systems
+analytics:
+    baidu_id:
+    google_id: "UA-73742380-2"
+
 # Leancloud Views
 leancloud:
     enable: false
-    app_id: #你的app_id
-    app_key: #你的app_key
+    app_id: #你的 app_id
+    app_key: #你的 app_key
     av_core_mini: "https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"
 
 # Busuanzi 不蒜子 Views
