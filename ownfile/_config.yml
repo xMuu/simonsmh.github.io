@@ -36,7 +36,7 @@ uiux:
 
 # JS Effect Switches
 js_effect:
-    fade: true
+    fade: false
     smoothscroll: false
 
 # Reading experience
@@ -146,12 +146,16 @@ sidebar:
             link: "https://tieba.simonsmh.cc/"
             icon: assignment_turned_in
             divider: false
+        服务器页面:
+            link: "https://simonsmh.cc/"
+            icon: cloud_queue
+            divider: false
     article_num:
         use: false
         divider: false
     footer:
-        divider: true
-        theme: true
+        divider: false
+        theme: false
         support: false
         feedback: false
         material: false
