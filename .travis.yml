@@ -1,27 +1,20 @@
 language: node_js
 node_js: stable
-
-# S: Build Lifecycle
 install:
   - npm install
-
 before_script:
   - git submodule update --init --recursive
   - cp -rf ownfile/* themes/hexo-theme-material/
-
 script:
   - hexo g
-
 after_script:
   - cd ./public
   - git init
-  - git config user.name "Simon Shi"
-  - git config user.email "simonsmh@gmail.com"
+  - git config user.name "bot"
+  - git config user.email "bot@github.com"
   - git add .
   - git commit -m "Hexo Pages"
-  - git push --force --quiet "https://${GitHub_Token}@github.com/simonsmh/simonsmh.github.io.git" master:master
-# E: Build LifeCycle
-
+  - git push --force --quiet "https://${GitHub_Token}@github.com/simonsmh/simonsmh.github.io.git" HEAD:master
 branches:
   only:
     - source
