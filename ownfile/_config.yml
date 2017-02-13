@@ -147,7 +147,7 @@ sidebar:
             icon: assignment_turned_in
             divider: false
         服务器页面:
-            link: "https://simonsmh.cc/"
+            link: "https://app.simonsmh.cc/"
             icon: cloud_queue
             divider: false
     article_num:
