@@ -12,7 +12,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://simonsmh.github.io
+url: https://simonsmh.cc
 root: /
 permalink: :year/:month/:title/
 permalink_defaults:
@@ -43,17 +43,17 @@ highlight:
   auto_detect: true
   tab_replace: true
 # Category & Tag
-default_category: 未分类
+default_category: uncategorized
 category_map:
-  未分类: uncategorized
-  杂谈: chat
-  技术: tech
-  路由器: openwrt
+  uncategorized: 未分类
+  chat: 杂谈
+  tech: 技术
+  openwrt: 路由器
 tag_map:
-  未分类: uncategorized
-  杂谈: chat
-  技术: tech
-  路由器: openwrt
+  uncategorized: 未分类
+  chat: 杂谈
+  tech: 技术
+  openwrt: 路由器
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
