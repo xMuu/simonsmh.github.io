@@ -1,6 +1,6 @@
 ---
 title: 当 ArchiSteamFarm 遇上 Linux
-date: 2016-12-08 14:42:00
+date: 2017-02-24 19:52:00
 tags: [Linux]
 ---
 ## 在 Linux 上安装 ArchiSteamFarm

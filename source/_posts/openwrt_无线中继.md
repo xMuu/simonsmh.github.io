@@ -1,6 +1,6 @@
 ---
 title: openwrt无线中继.md
-date: 2016-02-06 17:46:00
+date: 2017-02-24 19:46:00
 tags: [Openwrt]
 ---
 ## openwrt无线中继
