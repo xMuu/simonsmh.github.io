@@ -30,6 +30,7 @@ sed -i "s/服务器上的来源信息.*\"/咱的信息\"/" owndriver.jsonp
 去验证，去广告，去粗鄙之语
 与此同时，在翻源码时我看到了一些用户的vip信息以明文保存（现在已经base64加密了）
 https://github.com/ghostgzt/ExView/blob/master/dms.jsonp
+
 昵称 | 称号 
 -------- | -------- 
 岚dalao | 荣誉内测用户
