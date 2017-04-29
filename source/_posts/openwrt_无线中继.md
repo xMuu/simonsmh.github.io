@@ -1,5 +1,5 @@
 ---
-title: openwrt无线中
+title: openwrt无线中继
 date: 2017-02-24 19:46:00
 tags: [Openwrt]
 ---
