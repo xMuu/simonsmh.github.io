@@ -40,5 +40,5 @@ make image PROFILE="WNDR4300V1" -j #指定机型+多线程
 
 ### 常用软件包
 ```
-opkg install nano luci luci-app-commands luci-i18n-base-zh-cn luci-i18n-commands-zh-cn luci-i18n-firewall-zh-cn luci-app-samba luci-i18n-samba-zh-cn block-mount block-hotplug kmod-usb-storage kmod-usb-storage-extras kmod-fs-vfat kmod-fs-ntfs kmod-fs-exfat kmod-scsi-core kmod-scsi-generic kmod-nls-cp437 kmod-nls-iso8859-1 e2fsprogs shadowsocks-libev luci-app-shadowsocks
+opkg install wget ca-bundle ca-certificates luci-i18n-base-file-zh-cn luci-i18n-firewall-zh-cn iptables-mod-tproxy ip shadowsocks-libev luci-app-shadowsocks ChinaDNS luci-app-chinadns pdnsd luci-app-pdnsd luci-app-samba luci-i18n-samba-zh-cn block-mount kmod-usb-storage-extras kmod-fs-ntfs kmod-fs-vfat kmod-fs-exfat
 ```
