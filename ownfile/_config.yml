@@ -86,8 +86,8 @@ img:
 #       Available value of "host": google | baomitu | ustc | custom
 #       When you configured 'use' as 'custom', you should fill in the value of 'custom_font_host', which should be a mirror of google fonts.
 fonts:
-    family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif
-    use: google
+    family: Roboto, "Noto Sans", "Noto Sans CJK SC", "Microsoft YaHei", Arial, sans-serif
+    use: ustc
     custom_font_host:
 
 # Card Elevation Level
