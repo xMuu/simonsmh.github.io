@@ -1,7 +1,7 @@
 ---
 title: termux配置oh-my-zsh脚本
 date: 2016-07-27 14:33:00
-tags: [Chat]
+tags: [chat]
 ---
 termux配置oh-my-zsh脚本  
 推荐ys主题，shell要是没有路径显示很难受

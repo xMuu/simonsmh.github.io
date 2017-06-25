@@ -1,7 +1,7 @@
 ---
 title: Exview 车牌研究
 date: 2017-01-02 17:47:00
-tags: [Chat]
+tags: [chat]
 ---
 ### Exview 车牌研究
 车牌其实是t.cn短网址

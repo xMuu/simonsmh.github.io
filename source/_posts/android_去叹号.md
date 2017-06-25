@@ -1,7 +1,7 @@
 ---
 title: android 去叹号
 date: 2016-12-08 14:42:00
-tags: [Chat]
+tags: [chat]
 ---
 去叹号
 ```

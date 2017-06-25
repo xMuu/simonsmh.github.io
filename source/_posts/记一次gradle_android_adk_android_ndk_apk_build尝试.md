@@ -1,7 +1,7 @@
 ---
 title: 记一次gradle/android adk/android ndk/apk build尝试
 date: 2016-10-18 19:09:00
-tags: [Chat]
+tags: [chat]
 ---
 最近尝试在安装sdk来尝试编译一些gayhub上瞄到的程序，写个教程给自己看。
 
