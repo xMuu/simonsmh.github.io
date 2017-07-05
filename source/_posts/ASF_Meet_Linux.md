@@ -7,14 +7,16 @@ ASF重构（.NET Framework -> .NET Core）之后不再使用mono了，尊重开�
 6月26日开始重构进程，目前项目暂时不可用
 ## 在 Linux 上安装 dotnet
 ```
-echo "deb [arch=amd64] http://apt-mo.trafficmanager.net/repos/dotnet/ jessie main" > /etc/apt/sources.list.d/dotnetdev.list
 apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
+echo "deb [arch=amd64] http://apt-mo.trafficmanager.net/repos/dotnet/ jessie main" | sudo tee /etc/apt/sources.list.d/dotnetdev.list
 apt update
 apt install dotnet-sdk-2.0.0-preview1-002111 #(Not found)
 # dotnet sdk 依然处于活跃开发期，版本不同严重影响编译
 ```
 ## 在 Linux 上安装 mono (EOL)
 ```
+apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb http://download.mono-project.com/repo/debian jessie main" | sudo tee /etc/apt/sources.list.d/mono-official.list
 apt update
 apt install mono-complete
 ```
