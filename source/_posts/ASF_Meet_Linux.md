@@ -4,14 +4,13 @@ date: 2017-02-24 19:52:00
 tags: [Linux]
 ---
 ASF重构（.NET Framework -> .NET Core）之后不再使用mono了，尊重开发者的决定换用dotnet。
-6月26日开始重构进程，目前项目暂时不可用
+6月26日开始重构进程，8月14日 dotnet 2.0发布。
 ## 在 Linux 上安装 dotnet
 ```
-apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
-echo "deb [arch=amd64] http://apt-mo.trafficmanager.net/repos/dotnet/ jessie main" | sudo tee /etc/apt/sources.list.d/dotnetdev.list
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > /etc/apt/trusted.gpg.d/microsoft.gpg
+echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-jessie-prod jessie main" > /etc/apt/sources.list.d/dotnetdev.list
 apt update
-apt install dotnet-sdk-2.0.0-preview1-002111 #(Not found)
-# dotnet sdk 依然处于活跃开发期，版本不同严重影响编译
+apt install dotnet-sdk-2.0.0
 ```
 ## 在 Linux 上安装 mono (EOL)
 ```
@@ -29,9 +28,9 @@ git clone git@github.com:JustArchi/ArchiSteamFarm.git
 cd ArchiSteamFarm
 ./cc.sh
 ```
-因为有自动更新功能，所以不需要再去更新了  
+因为有自动更新功能，所以不需要再去更新了。  
 然后再将ASF的config存放到自己想要的目录。
 ## 开机持续运行
 ```
-echo 'screen -dm /root/ArchiSteamFarm/run.sh --path=/root/.config/ASF/ &' >> /etc/rc.local
+echo 'tmux new-window /root/ArchiSteamFarm/run.sh --path=/root/.config/ASF/' >> /etc/rc.local
 ```
