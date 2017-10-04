@@ -3,19 +3,20 @@ title: 树莓派3 与 Arch linux ARM
 date: 2017-06-17 00:03:00
 tags: [Linux]
 ---
+## 树莓派3 与 Arch linux ARM
 刷写镜像参考[ArchLinuxARM文档](https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-3)  
 先换源，然后安装些软件包
-```
+```bash
 pacman -Syu xorg xorg-xinit xf86-video-fbdev xorg-xrefresh make gcc git automake autoconf fakeroot pkg-config libtool xfce4 xfce4-goodies lightdm lightdm-gtk-greeter xarchiver vim tmux ffmpeg chromium sudo iw wireless_tools wpa_supplicant noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-roboto networkmanager network-manager-applet rsync patch packer
 systemctl enable lightdm NetworkManager
 ```
 重启，就可以在桌面环境使用普通用户了。  
 使用AUR装俩主题
-```
-packer -S paper-icon-theme-git adapta-gtk-theme-git
+```bash
+packer -S paper-icon-theme-git adapta-gtk-theme-git yaourt
 ```
 中文
-```
+```bash
 locale-gen
 echo LANG=zh_CN.UTF-8 > /etc/locale.conf
 ```

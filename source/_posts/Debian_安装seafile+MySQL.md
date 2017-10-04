@@ -1,11 +1,12 @@
 ---
-title: Debian安装seafile+MySQL
+title: Debian 安装 seafile + MySQL
 date: 2016-05-07 17:02:00
 tags: [Linux]
 ---
+> Seafile 是一款开源的企业云盘，注重可靠性和性能。支持 Windows, Mac, Linux, iOS, Android 平台。支持文件同步或者直接挂载到本地访问。
 
-### 安装seafile
-```
+## 安装seafile
+```bash
 apt update
 apt install python2.7 python-setuptools python-imaging python-ldap python-mysqldb python-memcache
 wget http://download-cn.seafile.com/seafile-server_5.1.1_x86-64.tar.gz
@@ -14,8 +15,9 @@ cd seafile-server-*
 ./setup-seafile-mysql.sh #安装
 ./seafile.sh start && ./seahub.sh start
 ```
-### 开机启动
-```
+
+## 开机启动
+```bash
 nano /etc/init/seafile-server.conf #设置开机脚本
 
 start on (started mysql
@@ -30,9 +32,10 @@ post-stop script
 /etc/init.d/seafile-server stop
 end script
 
-####################
+--------------------
 
 nano /etc/init.d/seafile-server && chmod a+x /etc/init.d/seafile-server && update-rc.d seafile-server defaults #写入开机脚本
+
 #!/bin/sh
 ### BEGIN INIT INFO
 # Provides:          seafile-server
@@ -80,8 +83,9 @@ case "$1" in
         ;;
 esac
 ```
-### 高级配置
-```
+
+## 高级配置
+```bash
 rm -rf /root/conf/seahub_settings.pyc
 nano /root/conf/seahub_settings.py #添加推荐高级配置
 CACHES = {

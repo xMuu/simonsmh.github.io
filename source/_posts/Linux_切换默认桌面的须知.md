@@ -1,16 +1,18 @@
 ---
-title: Linux切换默认桌面的须知
+title: Linux 切换默认桌面的须知
 date: 2016-12-31 19:30:00
 tags: [Linux]
 ---
-vps上准备切换到xfce桌面环境，事先做好了准备工作，但是在最后一步卡住了。  
+> vps上准备切换到xfce桌面环境，事先做好了准备工作，但是在最后一步卡住了。
+
+## Debian 修改 X-session
 xsession默认选择的是lxde，我想尽办法搜索相关的信息，包括xinit，startx的配置文件，lightdm的配置方法，都在Arch wiki上找到了，学到了很多知识，但并没有什么卵用。
-```
+```bash
 update-alternatives --config x-session-manager
 ```
 这个命令可以解决问题。  
 重新启动，发现系统中早已完成了桌面环境的启动，而无法成功实现切换
-```
+```bash
 root@simonsmh:~# startxfce4
 /usr/bin/startxfce4: Starting X server
 

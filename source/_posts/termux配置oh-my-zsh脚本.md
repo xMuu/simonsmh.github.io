@@ -1,9 +1,9 @@
 ---
-title: termux配置oh-my-zsh脚本
+title: termux 配置 oh-my-zsh 脚本
 date: 2016-07-27 14:33:00
 tags: [chat]
 ---
-termux配置oh-my-zsh脚本  
+## termux配置oh-my-zsh脚本  
 推荐ys主题，shell要是没有路径显示很难受
 ```
 #!/data/data/com.termux/files/usr/bin/bash

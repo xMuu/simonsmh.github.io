@@ -4,7 +4,7 @@ date: 2017-08-31 00:03:00
 tags: [Linux]
 ---
 ## 丢配置 
-```
+```ini
 [Match]
 Name=eth0
 

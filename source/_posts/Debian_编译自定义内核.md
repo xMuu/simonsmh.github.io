@@ -1,18 +1,19 @@
 ---
-title: Debian编译自定义内核
+title: Debian 编译自定义内核
 date: 2016-02-27 12:48:00
 tags: [Linux]
 ---
+> 本来是用来对比锐速的，提高 TCP INIT CWND 以尽可能占用更多的带宽。
 
-### 内核修改提速
-```
+## 内核修改提速
+```bash
 sed -i s/'tp->snd_cwnd = min(tp->snd_cwnd'/'tp->snd_cwnd = max(tp->snd_cwnd'/ net/ipv4/tcp_input.c
 sed -i s/'define TCP_INIT_CWND  10'/'define TCP_INIT_CWND   96'/ include/net/tcp.h
 sed -i s/'define TCP_RTO_MIN    ((unsigned)(HZ\/5))'/'define TCP_RTO_MIN    ((unsigned)(HZ\/25))'/ include/net/tcp.h
 ```
 
-### 编译内核
-```
+## 编译内核
+```bash
 wget https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.4.3.tar.gz
 tar -xf linux-4.4.3.tar.gz
 cd linux-4.4.3
