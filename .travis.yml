@@ -15,6 +15,7 @@ after_script:
   - git init
   - git config user.name "bot"
   - git config user.email "bot@github.com"
+  - echo "simonsmh.cc" > CNAME
   - git add .
   - git commit -m "Hexo Pages"
   - git push --force --quiet "https://${GitHub_Token}@github.com/simonsmh/simonsmh.github.io.git" HEAD:master
