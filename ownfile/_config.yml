@@ -167,9 +167,9 @@ sns:
     github: "https://github.com/simonsmh"
     linkedin: 
     zhihu: "https://www.zhihu.com/people/simonsmh"
-    bilibili: "http://space.bilibili.com/1353201#!/index"
-    telegram: "http://t.me/simonsmh"
-    v2ex: 
+    bilibili: "https://space.bilibili.com/1353201#!/index"
+    telegram: "https://t.me/simonsmh"
+    v2ex: "https://www.v2ex.com/member/simonsmh"
 
 # SNS Share Switch
 sns_share:
