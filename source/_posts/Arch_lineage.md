@@ -43,7 +43,6 @@ repo sync -c --force-sync -j16
   <project name="android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="omnirom" revision="android-8.1" />
   <project name="dianlujitao/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="github" revision="android-8.1" />
   <!--<project name="android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="omnirom" revision="android-8.1" />-->
-  <project name="android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="omnirom" revision="android-8.1" />
   <!--<project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="staging/lineage-15.1" />-->
   <project name="TeamWin/android_device_qcom_common" path="device/qcom/common" remote="github" revision="android-8.0" />
 </manifest>
