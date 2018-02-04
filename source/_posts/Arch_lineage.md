@@ -40,6 +40,25 @@ repo sync -c --force-sync -j16
 <!--Please do not manually edit this file-->
 <manifest>
   <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="lineage-15.1" />
+  <project name="android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="omnirom" revision="android-8.1" />
+  <project name="android_hardware_qcom_display-caf-msm8996" path="hardware/qcom/display-caf-msm8996" remote="omnirom" revision="android-8.1" />
+  <project name="android_hardware_qcom_audio-caf-msm8996" path="hardware/qcom/audio-caf-msm8996" remote="omnirom" revision="android-8.1" />
+  <project name="android_hardware_qcom_media-caf-msm8996" path="hardware/qcom/media-caf-msm8996" remote="omnirom" revision="android-8.1" />
+  <project name="vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="omnirom" revision="android-8.1" />
+  <project name="android_device_qcom_caf-sepolicy" path="device/qcom/sepolicy" remote="omnirom" revision="android-8.1" />
+  <project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="omnirom" revision="android-8.1" />
+  <project name="android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="omnirom" revision="android-8.1" />
+  <project name="android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="omnirom" revision="android-8.1" />
+  <project name="android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="omnirom" revision="android-8.1" />
+  <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="omnirom" revision="android-8.1" />
+</manifest>
+```
+我使用的 oneplus3 的 twrp 的 roomservice 如下：
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>
+  <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="lineage-15.1" />
   <project name="android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="omnirom" revision="android-8.1" />
   <project name="dianlujitao/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="github" revision="android-8.1" />
   <!--<project name="android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="omnirom" revision="android-8.1" />-->
