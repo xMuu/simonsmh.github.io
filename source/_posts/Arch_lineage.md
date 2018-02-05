@@ -59,11 +59,21 @@ repo sync -c --force-sync -j16
 <!--Please do not manually edit this file-->
 <manifest>
   <project name="TheMuppets/proprietary_vendor_oneplus" path="vendor/oneplus" remote="github" revision="lineage-15.1" />
-  <project name="android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="omnirom" revision="android-8.1" />
-  <project name="dianlujitao/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="github" revision="android-8.1" />
-  <!--<project name="android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="omnirom" revision="android-8.1" />-->
-  <!--<project name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="staging/lineage-15.1" />-->
+  <project name="TeamWin/android_device_oneplus_oneplus3" path="device/oneplus/oneplus3" remote="github" revision="android-8.1" />
   <project name="TeamWin/android_device_qcom_common" path="device/qcom/common" remote="github" revision="android-8.0" />
+  <remove-project name="platform/bootable/recovery"/>
+  <project name="android_bootable_recovery" path="bootable/recovery" remote="omnirom" revision="android-8.1" />
+  <project name="android_external_busybox" path="external/busybox" remote="omnirom" revision="android-8.1" />
+  <project name="android_hardware_qcom_display-caf-msm8996" path="hardware/qcom/display-caf-msm8996" remote="omnirom" revision="android-8.1" />
+  <project name="android_hardware_qcom_audio-caf-msm8996" path="hardware/qcom/audio-caf-msm8996" remote="omnirom" revision="android-8.1" />
+  <project name="android_hardware_qcom_media-caf-msm8996" path="hardware/qcom/media-caf-msm8996" remote="omnirom" revision="android-8.1" />
+  <project name="vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="omnirom" revision="android-8.1" />
+  <project name="android_device_qcom_caf-sepolicy" path="device/qcom/sepolicy" remote="omnirom" revision="android-8.1" />
+  <project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="omnirom" revision="android-8.1" />
+  <project name="android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="omnirom" revision="android-8.1" />
+  <project name="android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="omnirom" revision="android-8.1" />
+  <project name="android_kernel_oneplus_msm8996" path="kernel/oneplus/msm8996" remote="omnirom" revision="android-8.1" />
+  <project name="android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="omnirom" revision="android-8.1" />
 </manifest>
 ```
 将此文件存放在`.repo/local_manifests/roomservice.xml`即可同步所需文件。
@@ -108,13 +118,13 @@ TWRP
 ```bash
 PATH=~/bin:$PATH && LANG=C && LC_CTYPE=C
 . build/envsetup.sh
-lunch omni_oneplus3-userdebug
+lunch omni_oneplus3-eng
 mka recoveryimg
 #brunch oneplus3
 ```
 ### 自定义编译 target
 ```bash
 add_lunch_combo lineage_oneplus3-release
-add_lunch_combo omni_oneplus3-userdebug
+lunch omni_oneplus3-userdebug
 brunch
 ```
