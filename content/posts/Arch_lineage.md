@@ -1,7 +1,7 @@
 ---
 title: 在 Arch Linux 上编译 Lineage 15.1 和 TWRP
 date: 2018-01-29 15:00:00
-tags: [chat]
+tags: [杂谈]
 ---
 > 在 Arch Linux 上编译 Lineage 15.1 和 TWRP
 

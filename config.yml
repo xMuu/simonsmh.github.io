@@ -1,0 +1,67 @@
+baseURL: https://simonsmh.cc/
+languageCode: zh
+defaultContentLanguage: zh-hans
+title: simonsmh - 后花园
+theme: hermit
+enableRobotsTXT: true
+enableGitInfo: true
+hasCJKLanguage: true
+rssLimit: 10
+copyright: This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+enableEmoji: true
+googleAnalytics: UA-73742380-2
+disqusShortname: simonsmh
+
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: true
+    noClasses: false
+    tabWidth: 4
+
+author:
+  name: Simon Shi
+
+sitemap:
+  changefreq: weekly
+  priority: 0.5
+  filename: sitemap.xml
+
+params:
+  dateform: "Jan 2, 2006"
+  dateformShort: "Jan 2"
+  dateformNum: "2006-01-02"
+  dateformNumTime: "2006-01-02 15:04 -0700"
+  description: hugo, tech, simonsmh, linux, arch, debian, openwrt, android, website
+  images: ["https://avatars0.githubusercontent.com/u/9512067"]
+  themeColor: #494f5c
+  homeSubtitle: 快来与我一起发现更加广阔的互联网世界吧
+  footerCopyright: ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  bgImg: "https://manage.conoha.jp/Content/Images/ConoHa/ConoHaMode/bg_conoha.jpg"
+  gitUrl: "https://github.com/simonsmh/simonsmh.github.io/commit/"
+  justifyContent: true
+  relatedPosts: true
+  code_copy_button: true
+  customCSS: ["css/custom.css"]
+
+  social:
+  - name: email
+    url: mailto:simonsmh@gmail.com
+  - name: twitter
+    url: https://twitter.com/
+  - name: github
+    url: https://github.com/
+  - name: telegram
+    url: https://t.me/simonsmh
+
+menu:
+  main:
+  - name: 文章
+    url: posts
+    weight: 10
+  - name: 友链
+    weight: 100
+    url: friendlinks

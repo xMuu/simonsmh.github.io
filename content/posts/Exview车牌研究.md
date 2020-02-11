@@ -1,7 +1,7 @@
 ---
 title: Exview 车牌研究
 date: 2017-01-02 17:47:00
-tags: [chat]
+tags: [杂谈]
 ---
 > 记载了一些 Exview 逆向工程。
 

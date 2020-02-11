@@ -1,7 +1,7 @@
 ---
 title: 玩耍 TicWatch C2
 date: 2019-03-28 09:34:00
-tags: [chat]
+tags: [杂谈]
 ---
 之前就种草很久的 TicWatch 系列，由于最近的新品 C2 的上市打算购买一个来体验一下 Wear OS 的体验，而且正好小米手环2坏掉了（迫真），于是就从京东预定了一个 TicWatch C2 进行一下评测。
 

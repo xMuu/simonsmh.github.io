@@ -1,7 +1,7 @@
 ---
 title: android 去叹号
 date: 2016-12-08 14:42:00
-tags: [chat]
+tags: [杂谈]
 ---
 > 从Android 5.0 (Lollipop)开始，安卓为了检测各种需要登录的Wifi服务，提供了captive_portal_detection_enabled和captive_portal_server这两个设置，分别作为检测的开关和服务器。
 
