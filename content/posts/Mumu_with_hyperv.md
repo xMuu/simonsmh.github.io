@@ -9,7 +9,7 @@ tags: [杂谈]
 ## 国产手游模拟器与 Hyper-V 之争
 Mumu 是一款商业化的 Android X86 手游模拟器，其运行手游的效率相对较高，体验尚佳，我曾经常使用，但是由于其无法与 Hyper-V 共存，便一直在寻找替代品。事实上，基本所有的模拟器都是基于开源的 Virtualbox 进行魔改提升效率，实现 Direct3D 11 渲染，完善用户体验，但是其基本的需求都是使用魔改 Virtualbox 自己的后端实现而达到的，自然从原理上就无法与 Hyper-V 兼容。
 
-这在旧时 Windows 时期，其实是间大快人心的好事，毕竟 Hyper-V 其运行效率难以与传统的虚拟机平台 Vmware、Virtualbox 竞争，也被吐过不少口水。不巧的是 Hyper-V 近年来用处是越来越多了，从一键开发虚拟环境搭建，到 Container，到 Windows Sandbox，一直到 WSL2 宣布使用 Hyper-V+Linux Kernel 方案替代 WSL1 的 Windows NT API 方案，日常的生活是越来越绕不开 Hyper-V 了。当然，强制让 Virtualbox 使用 Hyper-V 后端的解决方案也有，但是性能就比较难以令人接受，感兴趣可以通过修改 Genymotion 附带的 Virtualbox 配置来尝试（scrcpy 在高分屏上可能有性能问题）。
+这在旧时 Windows 时期，其实是件大快人心的好事，毕竟 Hyper-V 其运行效率难以与传统的虚拟机平台 Vmware、Virtualbox 竞争，也被吐过不少口水。不巧的是 Hyper-V 近年来用处是越来越多了，从一键开发虚拟环境搭建，到 Container，到 Windows Sandbox，一直到 WSL2 宣布使用 Hyper-V+Linux Kernel 方案替代 WSL1 的 Windows NT API 方案，日常的生活是越来越绕不开 Hyper-V 了。当然，强制让 Virtualbox 使用 Hyper-V 后端的解决方案也有，但是性能就比较难以令人接受，感兴趣可以通过修改 Genymotion 附带的 Virtualbox 配置来尝试（scrcpy 在高分屏上可能有性能问题）。
 
 ## 写作 Nebula，读作 Windroy?
 2020 年初，Mumu 手游助手测试版于网易 Mumu 官网推出，其与原版 Mumu 模拟器最不相同的地方就是在于其在原版引擎 Nemu 的基础上添加了一个新引擎 Nebula，其原理上就不同于传统的 Virtualbox，它不是跑在 Linux Kernel 之上，而是直接跑在 Windows Kernel 上，换句话说，其实现了 Windows API 与 Android API 的桥接与翻译。第一眼看见它时，我第一个想到的就是 6 年之前的 Bluestacks 和 [Windroy](http://web.archive.org/web/20141006160302/http://www.windroy.cn/) 这两款特立独行的 Windows 平台 Android X86 兼容软件，依赖其出色的 [Dalvik](https://source.android.com/devices/tech/dalvik) 性能而脱颖而出，但可惜的是这两款软件后来放弃了这个方向，带领行业纷纷转用虚拟机实现。
@@ -27,14 +27,14 @@ Mumu 是一款商业化的 Android X86 手游模拟器，其运行手游的效�
 虚拟机虽然跑不了 adbd，没有 Root，但是自带 Busybox 提供了一个 Root Shell 接口在
 `.\MuMu\mumu3\Engine\NEBULA\NEBULA-<version>-x86\sh.bat`
 ```shell
-# nebula\nebula.exe --cooked-mode --rootdir nebula/fs_static --session-id *** --dynamicdir *** /system/bin/sh 
+nebula\nebula.exe --cooked-mode --rootdir nebula/fs_static --session-id *** --dynamicdir *** /system/bin/sh 
 ```
 
 其中 `dynamicdir` 就是系统之外数据的部分，似乎每个软件都应当有独立的空间，而引擎在使用的时候按需挂载。
 
-Mumu 限制了通过 GUI 为 Nebula 安装自己的软件包，但是可以通过命令行安装：
+Mumu 限制了通过 GUI 为 Nebula 安装自己的软件包，但是可以通过这个接口使用命令行安装：
 ```shell
-# pm install -f *.apk
+pm install -f *.apk
 ```
 当然，因为其是 Dalvik，没有 dex2oat 的步骤， 直接拷贝至 `/data/app` 后重启也是可以的。
 
