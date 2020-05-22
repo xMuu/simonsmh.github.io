@@ -51,9 +51,9 @@ params:
   - name: email
     url: mailto:simonsmh@gmail.com
   - name: twitter
-    url: https://twitter.com/
+    url: https://twitter.com/simonsmhsmh
   - name: github
-    url: https://github.com/
+    url: https://github.com/simonsmh
   - name: telegram
     url: https://t.me/simonsmh
 
